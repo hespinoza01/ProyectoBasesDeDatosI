@@ -8,3 +8,4 @@ C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.csproj.GenerateResource.Cache
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.exe
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.pdb
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\bin\Debug\servidor-cliente.exe.config
