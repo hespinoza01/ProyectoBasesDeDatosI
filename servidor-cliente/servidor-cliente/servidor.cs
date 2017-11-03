@@ -52,9 +52,9 @@ namespace servidor_cliente
                     while (true)
                     {
                         //se acepta la petición de un cliente
-                        TcpClient cliente = server.AcceptTcpClient();
+                       TcpClient cliente = server.AcceptTcpClient();
 
-                        Byte[] bytesCliente = new Byte[256]; //solo se acepta un máximo de 256 caracteres
+                        Byte[] bytesCliente = new Byte[255]; //solo se acepta un máximo de 256 caracteres
 
                         //se lee el mensaje del cliente
                         NetworkStream streamCliente = cliente.GetStream();

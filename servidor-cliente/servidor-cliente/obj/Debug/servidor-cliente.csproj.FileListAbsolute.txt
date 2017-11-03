@@ -9,3 +9,12 @@ C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.exe
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.pdb
 C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\bin\Debug\servidor-cliente.exe.config
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\bin\Debug\servidor-cliente.exe
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\bin\Debug\servidor-cliente.pdb
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\bin\Debug\Bunifu_UI_v1.52.dll
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.csprojResolveAssemblyReference.cache
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor_cliente.Servidor.resources
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor_cliente.Properties.Resources.resources
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.csproj.GenerateResource.Cache
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.exe
+C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\servidor-cliente\servidor-cliente\obj\Debug\servidor-cliente.pdb
