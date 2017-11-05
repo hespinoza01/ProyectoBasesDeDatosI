@@ -66,10 +66,9 @@
             this.addUser.BackColor = System.Drawing.Color.Transparent;
             this.addUser.Image = ((System.Drawing.Image)(resources.GetObject("addUser.Image")));
             this.addUser.ImageActive = ((System.Drawing.Image)(resources.GetObject("addUser.ImageActive")));
-            this.addUser.Location = new System.Drawing.Point(417, 11);
-            this.addUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.addUser.Location = new System.Drawing.Point(313, 9);
             this.addUser.Name = "addUser";
-            this.addUser.Size = new System.Drawing.Size(33, 31);
+            this.addUser.Size = new System.Drawing.Size(25, 25);
             this.addUser.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.addUser.TabIndex = 11;
             this.addUser.TabStop = false;
@@ -80,10 +79,9 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(188, 86);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Location = new System.Drawing.Point(141, 70);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(133, 123);
+            this.pictureBox1.Size = new System.Drawing.Size(100, 100);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
@@ -93,10 +91,9 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.ImageActive")));
-            this.bunifuImageButton1.Location = new System.Drawing.Point(459, 11);
-            this.bunifuImageButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(344, 9);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(33, 31);
+            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.bunifuImageButton1.TabIndex = 9;
             this.bunifuImageButton1.TabStop = false;
@@ -116,10 +113,10 @@
             this.username.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.username.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.username.LineThickness = 2;
-            this.username.Location = new System.Drawing.Point(85, 270);
-            this.username.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.username.Location = new System.Drawing.Point(64, 219);
+            this.username.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.username.Name = "username";
-            this.username.Size = new System.Drawing.Size(333, 54);
+            this.username.Size = new System.Drawing.Size(250, 44);
             this.username.TabIndex = 8;
             this.username.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.username.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.username_KeyPress);
@@ -137,13 +134,14 @@
             this.password.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.password.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.password.LineThickness = 2;
-            this.password.Location = new System.Drawing.Point(85, 352);
-            this.password.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.password.Location = new System.Drawing.Point(64, 286);
+            this.password.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.password.Name = "password";
-            this.password.Size = new System.Drawing.Size(333, 54);
+            this.password.Size = new System.Drawing.Size(250, 44);
             this.password.TabIndex = 7;
             this.password.Text = "Password";
             this.password.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+            this.password.OnValueChanged += new System.EventHandler(this.password_OnValueChanged);
             this.password.Enter += new System.EventHandler(this.password_Enter);
             this.password.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.password_KeyPress);
             // 
@@ -165,20 +163,20 @@
             this.ingresar.IdleFillColor = System.Drawing.Color.Transparent;
             this.ingresar.IdleForecolor = System.Drawing.Color.SpringGreen;
             this.ingresar.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.ingresar.Location = new System.Drawing.Point(85, 494);
-            this.ingresar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.ingresar.Location = new System.Drawing.Point(64, 401);
+            this.ingresar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.ingresar.Name = "ingresar";
-            this.ingresar.Size = new System.Drawing.Size(333, 55);
+            this.ingresar.Size = new System.Drawing.Size(250, 45);
             this.ingresar.TabIndex = 6;
             this.ingresar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.ingresar.Click += new System.EventHandler(this.ingresar_Click);
             // 
             // login
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(504, 581);
+            this.ClientSize = new System.Drawing.Size(378, 472);
             this.Controls.Add(this.addUser);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.bunifuImageButton1);
@@ -187,7 +185,6 @@
             this.Controls.Add(this.ingresar);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

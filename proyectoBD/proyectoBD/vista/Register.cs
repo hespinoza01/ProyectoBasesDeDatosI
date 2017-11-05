@@ -24,11 +24,8 @@ namespace proyectoBD
             bac.Visible = false;
             pass.isPassword = true;
             confirPass.isPassword = true;
-
             edt = e;
-
             this.index = index;
-
         }
 
         private void edit_Click(object sender, EventArgs e)
@@ -52,7 +49,7 @@ namespace proyectoBD
             }else{
                 if (pass.Text.Equals(confirPass.Text)){
 
-                    if (edt)
+                    if (edt==true)
                     {
                         editInfo();
                     }

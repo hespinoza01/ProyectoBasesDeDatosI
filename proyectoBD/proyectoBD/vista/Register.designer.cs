@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation3 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -75,10 +75,9 @@
             this.edit.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.edit, BunifuAnimatorNS.DecorationType.None);
             this.edit.Image = ((System.Drawing.Image)(resources.GetObject("edit.Image")));
-            this.edit.Location = new System.Drawing.Point(284, 149);
-            this.edit.Margin = new System.Windows.Forms.Padding(4);
+            this.edit.Location = new System.Drawing.Point(205, 111);
             this.edit.Name = "edit";
-            this.edit.Size = new System.Drawing.Size(33, 31);
+            this.edit.Size = new System.Drawing.Size(25, 25);
             this.edit.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.edit.TabIndex = 23;
             this.edit.TabStop = false;
@@ -92,22 +91,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation3.AnimateOnlyDifferences = true;
-            animation3.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.BlindCoeff")));
-            animation3.LeafCoeff = 0F;
-            animation3.MaxTime = 1F;
-            animation3.MinTime = 0F;
-            animation3.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicCoeff")));
-            animation3.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation3.MosaicShift")));
-            animation3.MosaicSize = 0;
-            animation3.Padding = new System.Windows.Forms.Padding(0);
-            animation3.RotateCoeff = 0F;
-            animation3.RotateLimit = 0F;
-            animation3.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.ScaleCoeff")));
-            animation3.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation3.SlideCoeff")));
-            animation3.TimeCoeff = 0F;
-            animation3.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation3;
+            animation2.AnimateOnlyDifferences = true;
+            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
+            animation2.LeafCoeff = 0F;
+            animation2.MaxTime = 1F;
+            animation2.MinTime = 0F;
+            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
+            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
+            animation2.MosaicSize = 0;
+            animation2.Padding = new System.Windows.Forms.Padding(0);
+            animation2.RotateCoeff = 0F;
+            animation2.RotateLimit = 0F;
+            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
+            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
+            animation2.TimeCoeff = 0F;
+            animation2.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation2;
             // 
             // apellidoTxt
             // 
@@ -123,10 +122,10 @@
             this.apellidoTxt.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.apellidoTxt.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.apellidoTxt.LineThickness = 3;
-            this.apellidoTxt.Location = new System.Drawing.Point(101, 373);
-            this.apellidoTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.apellidoTxt.Location = new System.Drawing.Point(76, 303);
+            this.apellidoTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.apellidoTxt.Name = "apellidoTxt";
-            this.apellidoTxt.Size = new System.Drawing.Size(273, 37);
+            this.apellidoTxt.Size = new System.Drawing.Size(205, 30);
             this.apellidoTxt.TabIndex = 28;
             this.apellidoTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.apellidoTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.apellidoTxt_KeyPress);
@@ -138,8 +137,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel5, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(101, 348);
-            this.bunifuCustomLabel5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(76, 283);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(65, 19);
             this.bunifuCustomLabel5.TabIndex = 29;
@@ -159,10 +157,10 @@
             this.nombreTxt.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.nombreTxt.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.nombreTxt.LineThickness = 3;
-            this.nombreTxt.Location = new System.Drawing.Point(97, 256);
-            this.nombreTxt.Margin = new System.Windows.Forms.Padding(5);
+            this.nombreTxt.Location = new System.Drawing.Point(73, 208);
+            this.nombreTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nombreTxt.Name = "nombreTxt";
-            this.nombreTxt.Size = new System.Drawing.Size(273, 37);
+            this.nombreTxt.Size = new System.Drawing.Size(205, 30);
             this.nombreTxt.TabIndex = 25;
             this.nombreTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.nombreTxt.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nombreTxt_KeyPress);
@@ -174,8 +172,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel6, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel6.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel6.Location = new System.Drawing.Point(97, 231);
-            this.bunifuCustomLabel6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel6.Location = new System.Drawing.Point(73, 188);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
             this.bunifuCustomLabel6.Size = new System.Drawing.Size(64, 19);
             this.bunifuCustomLabel6.TabIndex = 26;
@@ -187,10 +184,9 @@
             this.bunifuTransition1.SetDecoration(this.close, BunifuAnimatorNS.DecorationType.None);
             this.close.Image = ((System.Drawing.Image)(resources.GetObject("close.Image")));
             this.close.ImageActive = ((System.Drawing.Image)(resources.GetObject("close.ImageActive")));
-            this.close.Location = new System.Drawing.Point(483, 7);
-            this.close.Margin = new System.Windows.Forms.Padding(4);
+            this.close.Location = new System.Drawing.Point(362, 6);
             this.close.Name = "close";
-            this.close.Size = new System.Drawing.Size(33, 31);
+            this.close.Size = new System.Drawing.Size(25, 25);
             this.close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.close.TabIndex = 24;
             this.close.TabStop = false;
@@ -202,10 +198,9 @@
             this.perfil.BackColor = System.Drawing.Color.Transparent;
             this.bunifuTransition1.SetDecoration(this.perfil, BunifuAnimatorNS.DecorationType.None);
             this.perfil.Image = ((System.Drawing.Image)(resources.GetObject("perfil.Image")));
-            this.perfil.Location = new System.Drawing.Point(184, 57);
-            this.perfil.Margin = new System.Windows.Forms.Padding(4);
+            this.perfil.Location = new System.Drawing.Point(145, 36);
             this.perfil.Name = "perfil";
-            this.perfil.Size = new System.Drawing.Size(133, 123);
+            this.perfil.Size = new System.Drawing.Size(100, 100);
             this.perfil.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.perfil.TabIndex = 22;
             this.perfil.TabStop = false;
@@ -229,10 +224,10 @@
             this.next.IdleFillColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.next.IdleForecolor = System.Drawing.Color.SpringGreen;
             this.next.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.next.Location = new System.Drawing.Point(295, 496);
-            this.next.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.next.Location = new System.Drawing.Point(221, 403);
+            this.next.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.next.Name = "next";
-            this.next.Size = new System.Drawing.Size(165, 49);
+            this.next.Size = new System.Drawing.Size(124, 40);
             this.next.TabIndex = 27;
             this.next.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.next.Click += new System.EventHandler(this.next_Click);
@@ -247,10 +242,9 @@
             this.lateral.Controls.Add(this.bunifuCustomLabel2);
             this.lateral.Controls.Add(this.finalizar);
             this.bunifuTransition1.SetDecoration(this.lateral, BunifuAnimatorNS.DecorationType.None);
-            this.lateral.Location = new System.Drawing.Point(13, 212);
-            this.lateral.Margin = new System.Windows.Forms.Padding(4);
+            this.lateral.Location = new System.Drawing.Point(9, 172);
             this.lateral.Name = "lateral";
-            this.lateral.Size = new System.Drawing.Size(493, 350);
+            this.lateral.Size = new System.Drawing.Size(378, 283);
             this.lateral.TabIndex = 30;
             // 
             // confirPass
@@ -262,15 +256,15 @@
             this.confirPass.ForeColor = System.Drawing.Color.SpringGreen;
             this.confirPass.HintForeColor = System.Drawing.Color.Empty;
             this.confirPass.HintText = "";
-            this.confirPass.isPassword = true;
+            this.confirPass.isPassword = false;
             this.confirPass.LineFocusedColor = System.Drawing.Color.MediumSeaGreen;
             this.confirPass.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.confirPass.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.confirPass.LineThickness = 3;
-            this.confirPass.Location = new System.Drawing.Point(92, 208);
-            this.confirPass.Margin = new System.Windows.Forms.Padding(5);
+            this.confirPass.Location = new System.Drawing.Point(69, 169);
+            this.confirPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.confirPass.Name = "confirPass";
-            this.confirPass.Size = new System.Drawing.Size(273, 37);
+            this.confirPass.Size = new System.Drawing.Size(205, 30);
             this.confirPass.TabIndex = 38;
             this.confirPass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.confirPass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.confirPass_KeyPress);
@@ -284,15 +278,15 @@
             this.pass.ForeColor = System.Drawing.Color.SpringGreen;
             this.pass.HintForeColor = System.Drawing.Color.Empty;
             this.pass.HintText = "";
-            this.pass.isPassword = true;
+            this.pass.isPassword = false;
             this.pass.LineFocusedColor = System.Drawing.Color.MediumSeaGreen;
             this.pass.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.pass.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.pass.LineThickness = 3;
-            this.pass.Location = new System.Drawing.Point(92, 135);
-            this.pass.Margin = new System.Windows.Forms.Padding(5);
+            this.pass.Location = new System.Drawing.Point(69, 110);
+            this.pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pass.Name = "pass";
-            this.pass.Size = new System.Drawing.Size(273, 37);
+            this.pass.Size = new System.Drawing.Size(205, 30);
             this.pass.TabIndex = 37;
             this.pass.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.pass.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.pass_KeyPress);
@@ -304,8 +298,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel3, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel3.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel3.Location = new System.Drawing.Point(153, 185);
-            this.bunifuCustomLabel3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel3.Location = new System.Drawing.Point(65, 146);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
             this.bunifuCustomLabel3.Size = new System.Drawing.Size(161, 19);
             this.bunifuCustomLabel3.TabIndex = 36;
@@ -318,8 +311,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel1, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel1.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel1.Location = new System.Drawing.Point(185, 111);
-            this.bunifuCustomLabel1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel1.Location = new System.Drawing.Point(67, 92);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
             this.bunifuCustomLabel1.Size = new System.Drawing.Size(90, 19);
             this.bunifuCustomLabel1.TabIndex = 34;
@@ -339,10 +331,10 @@
             this.nomUser.LineIdleColor = System.Drawing.Color.SpringGreen;
             this.nomUser.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.nomUser.LineThickness = 3;
-            this.nomUser.Location = new System.Drawing.Point(92, 60);
-            this.nomUser.Margin = new System.Windows.Forms.Padding(5);
+            this.nomUser.Location = new System.Drawing.Point(69, 49);
+            this.nomUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.nomUser.Name = "nomUser";
-            this.nomUser.Size = new System.Drawing.Size(273, 37);
+            this.nomUser.Size = new System.Drawing.Size(205, 30);
             this.nomUser.TabIndex = 30;
             this.nomUser.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.nomUser.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.nomUser_KeyPress);
@@ -354,8 +346,7 @@
             this.bunifuTransition1.SetDecoration(this.bunifuCustomLabel2, BunifuAnimatorNS.DecorationType.None);
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Century Gothic", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(164, 36);
-            this.bunifuCustomLabel2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(64, 26);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(140, 19);
             this.bunifuCustomLabel2.TabIndex = 31;
@@ -380,10 +371,10 @@
             this.finalizar.IdleFillColor = System.Drawing.Color.SpringGreen;
             this.finalizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.finalizar.IdleLineColor = System.Drawing.Color.SpringGreen;
-            this.finalizar.Location = new System.Drawing.Point(321, 286);
-            this.finalizar.Margin = new System.Windows.Forms.Padding(7, 6, 7, 6);
+            this.finalizar.Location = new System.Drawing.Point(241, 239);
+            this.finalizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
             this.finalizar.Name = "finalizar";
-            this.finalizar.Size = new System.Drawing.Size(165, 49);
+            this.finalizar.Size = new System.Drawing.Size(124, 40);
             this.finalizar.TabIndex = 32;
             this.finalizar.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             this.finalizar.Click += new System.EventHandler(this.registrar_Click);
@@ -394,10 +385,9 @@
             this.bunifuTransition1.SetDecoration(this.bac, BunifuAnimatorNS.DecorationType.None);
             this.bac.Image = ((System.Drawing.Image)(resources.GetObject("bac.Image")));
             this.bac.ImageActive = ((System.Drawing.Image)(resources.GetObject("bac.ImageActive")));
-            this.bac.Location = new System.Drawing.Point(12, 7);
-            this.bac.Margin = new System.Windows.Forms.Padding(4);
+            this.bac.Location = new System.Drawing.Point(9, 6);
             this.bac.Name = "bac";
-            this.bac.Size = new System.Drawing.Size(55, 31);
+            this.bac.Size = new System.Drawing.Size(41, 25);
             this.bac.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.bac.TabIndex = 37;
             this.bac.TabStop = false;
@@ -411,10 +401,10 @@
             // 
             // Register
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
-            this.ClientSize = new System.Drawing.Size(525, 575);
+            this.ClientSize = new System.Drawing.Size(394, 467);
             this.Controls.Add(this.bac);
             this.Controls.Add(this.lateral);
             this.Controls.Add(this.close);
@@ -427,7 +417,6 @@
             this.Controls.Add(this.next);
             this.bunifuTransition1.SetDecoration(this, BunifuAnimatorNS.DecorationType.None);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Register";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";

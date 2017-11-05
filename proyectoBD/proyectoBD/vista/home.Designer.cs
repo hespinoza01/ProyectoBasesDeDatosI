@@ -38,6 +38,7 @@
             this.Name = "home";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "home";
+            this.Load += new System.EventHandler(this.home_Load);
             this.ResumeLayout(false);
 
         }

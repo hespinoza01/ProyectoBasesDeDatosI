@@ -15,6 +15,7 @@ namespace proyectoBD
         public login()
         {
             InitializeComponent();
+            password.isPassword = true;
         }
 
         bool f = true;
@@ -110,6 +111,11 @@ namespace proyectoBD
 
             Console.WriteLine("verifica " + us);
             return us;
+        }
+
+        private void password_OnValueChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

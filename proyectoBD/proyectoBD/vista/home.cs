@@ -16,5 +16,9 @@ namespace proyectoBD
         {
             InitializeComponent();
         }
+
+        private void home_Load(object sender, EventArgs e)
+        {
+        }
     }
 }
