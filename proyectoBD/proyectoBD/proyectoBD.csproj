@@ -100,6 +100,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <EmbeddedResource Include="vista\home.resx">
       <DependentUpon>home.cs</DependentUpon>
@@ -133,7 +134,19 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="images\" />
+    <None Include="images\Edit_32px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Close Window_25px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Settings_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Delete_25px2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="images\Circled User Male_100px.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

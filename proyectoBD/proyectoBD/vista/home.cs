@@ -15,10 +15,18 @@ namespace proyectoBD
         public home()
         {
             InitializeComponent();
+            toolTip1.SetToolTip(cerrarSesion, "Cerrar Sesion");
         }
 
         private void home_Load(object sender, EventArgs e)
         {
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+            login l = new login();
+            l.Show();
         }
     }
 }
