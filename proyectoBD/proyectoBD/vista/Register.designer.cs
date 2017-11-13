@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            BunifuAnimatorNS.Animation animation2 = new BunifuAnimatorNS.Animation();
+            BunifuAnimatorNS.Animation animation1 = new BunifuAnimatorNS.Animation();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Register));
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.bunifuElipse2 = new Bunifu.Framework.UI.BunifuElipse(this.components);
@@ -91,22 +91,22 @@
             // 
             this.bunifuTransition1.AnimationType = BunifuAnimatorNS.AnimationType.HorizSlide;
             this.bunifuTransition1.Cursor = null;
-            animation2.AnimateOnlyDifferences = true;
-            animation2.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.BlindCoeff")));
-            animation2.LeafCoeff = 0F;
-            animation2.MaxTime = 1F;
-            animation2.MinTime = 0F;
-            animation2.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicCoeff")));
-            animation2.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation2.MosaicShift")));
-            animation2.MosaicSize = 0;
-            animation2.Padding = new System.Windows.Forms.Padding(0);
-            animation2.RotateCoeff = 0F;
-            animation2.RotateLimit = 0F;
-            animation2.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.ScaleCoeff")));
-            animation2.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation2.SlideCoeff")));
-            animation2.TimeCoeff = 0F;
-            animation2.TransparencyCoeff = 0F;
-            this.bunifuTransition1.DefaultAnimation = animation2;
+            animation1.AnimateOnlyDifferences = true;
+            animation1.BlindCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.BlindCoeff")));
+            animation1.LeafCoeff = 0F;
+            animation1.MaxTime = 1F;
+            animation1.MinTime = 0F;
+            animation1.MosaicCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicCoeff")));
+            animation1.MosaicShift = ((System.Drawing.PointF)(resources.GetObject("animation1.MosaicShift")));
+            animation1.MosaicSize = 0;
+            animation1.Padding = new System.Windows.Forms.Padding(0);
+            animation1.RotateCoeff = 0F;
+            animation1.RotateLimit = 0F;
+            animation1.ScaleCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.ScaleCoeff")));
+            animation1.SlideCoeff = ((System.Drawing.PointF)(resources.GetObject("animation1.SlideCoeff")));
+            animation1.TimeCoeff = 0F;
+            animation1.TransparencyCoeff = 0F;
+            this.bunifuTransition1.DefaultAnimation = animation1;
             // 
             // apellidoTxt
             // 
@@ -123,7 +123,7 @@
             this.apellidoTxt.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.apellidoTxt.LineThickness = 3;
             this.apellidoTxt.Location = new System.Drawing.Point(76, 303);
-            this.apellidoTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.apellidoTxt.Margin = new System.Windows.Forms.Padding(4);
             this.apellidoTxt.Name = "apellidoTxt";
             this.apellidoTxt.Size = new System.Drawing.Size(205, 30);
             this.apellidoTxt.TabIndex = 28;
@@ -139,7 +139,7 @@
             this.bunifuCustomLabel5.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel5.Location = new System.Drawing.Point(76, 283);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
-            this.bunifuCustomLabel5.Size = new System.Drawing.Size(65, 19);
+            this.bunifuCustomLabel5.Size = new System.Drawing.Size(51, 16);
             this.bunifuCustomLabel5.TabIndex = 29;
             this.bunifuCustomLabel5.Text = "Apellido";
             // 
@@ -158,7 +158,7 @@
             this.nombreTxt.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.nombreTxt.LineThickness = 3;
             this.nombreTxt.Location = new System.Drawing.Point(73, 208);
-            this.nombreTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nombreTxt.Margin = new System.Windows.Forms.Padding(4);
             this.nombreTxt.Name = "nombreTxt";
             this.nombreTxt.Size = new System.Drawing.Size(205, 30);
             this.nombreTxt.TabIndex = 25;
@@ -174,7 +174,7 @@
             this.bunifuCustomLabel6.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel6.Location = new System.Drawing.Point(73, 188);
             this.bunifuCustomLabel6.Name = "bunifuCustomLabel6";
-            this.bunifuCustomLabel6.Size = new System.Drawing.Size(64, 19);
+            this.bunifuCustomLabel6.Size = new System.Drawing.Size(51, 16);
             this.bunifuCustomLabel6.TabIndex = 26;
             this.bunifuCustomLabel6.Text = "Nombre";
             // 
@@ -225,7 +225,7 @@
             this.next.IdleForecolor = System.Drawing.Color.SpringGreen;
             this.next.IdleLineColor = System.Drawing.Color.SpringGreen;
             this.next.Location = new System.Drawing.Point(221, 403);
-            this.next.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.next.Margin = new System.Windows.Forms.Padding(5);
             this.next.Name = "next";
             this.next.Size = new System.Drawing.Size(124, 40);
             this.next.TabIndex = 27;
@@ -244,7 +244,7 @@
             this.bunifuTransition1.SetDecoration(this.lateral, BunifuAnimatorNS.DecorationType.None);
             this.lateral.Location = new System.Drawing.Point(9, 172);
             this.lateral.Name = "lateral";
-            this.lateral.Size = new System.Drawing.Size(378, 283);
+            this.lateral.Size = new System.Drawing.Size(373, 283);
             this.lateral.TabIndex = 30;
             // 
             // confirPass
@@ -262,7 +262,7 @@
             this.confirPass.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.confirPass.LineThickness = 3;
             this.confirPass.Location = new System.Drawing.Point(69, 169);
-            this.confirPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.confirPass.Margin = new System.Windows.Forms.Padding(4);
             this.confirPass.Name = "confirPass";
             this.confirPass.Size = new System.Drawing.Size(205, 30);
             this.confirPass.TabIndex = 38;
@@ -284,7 +284,7 @@
             this.pass.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.pass.LineThickness = 3;
             this.pass.Location = new System.Drawing.Point(69, 110);
-            this.pass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pass.Margin = new System.Windows.Forms.Padding(4);
             this.pass.Name = "pass";
             this.pass.Size = new System.Drawing.Size(205, 30);
             this.pass.TabIndex = 37;
@@ -300,7 +300,7 @@
             this.bunifuCustomLabel3.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel3.Location = new System.Drawing.Point(65, 146);
             this.bunifuCustomLabel3.Name = "bunifuCustomLabel3";
-            this.bunifuCustomLabel3.Size = new System.Drawing.Size(161, 19);
+            this.bunifuCustomLabel3.Size = new System.Drawing.Size(127, 16);
             this.bunifuCustomLabel3.TabIndex = 36;
             this.bunifuCustomLabel3.Text = "Confirmar Contraseña";
             // 
@@ -313,7 +313,7 @@
             this.bunifuCustomLabel1.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel1.Location = new System.Drawing.Point(67, 92);
             this.bunifuCustomLabel1.Name = "bunifuCustomLabel1";
-            this.bunifuCustomLabel1.Size = new System.Drawing.Size(90, 19);
+            this.bunifuCustomLabel1.Size = new System.Drawing.Size(72, 16);
             this.bunifuCustomLabel1.TabIndex = 34;
             this.bunifuCustomLabel1.Text = "Contraseña";
             // 
@@ -332,7 +332,7 @@
             this.nomUser.LineMouseHoverColor = System.Drawing.Color.MediumSeaGreen;
             this.nomUser.LineThickness = 3;
             this.nomUser.Location = new System.Drawing.Point(69, 49);
-            this.nomUser.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.nomUser.Margin = new System.Windows.Forms.Padding(4);
             this.nomUser.Name = "nomUser";
             this.nomUser.Size = new System.Drawing.Size(205, 30);
             this.nomUser.TabIndex = 30;
@@ -348,9 +348,9 @@
             this.bunifuCustomLabel2.ForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.bunifuCustomLabel2.Location = new System.Drawing.Point(64, 26);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
-            this.bunifuCustomLabel2.Size = new System.Drawing.Size(140, 19);
+            this.bunifuCustomLabel2.Size = new System.Drawing.Size(44, 16);
             this.bunifuCustomLabel2.TabIndex = 31;
-            this.bunifuCustomLabel2.Text = "Nombre de usuario";
+            this.bunifuCustomLabel2.Text = "Correo";
             // 
             // finalizar
             // 
@@ -372,7 +372,7 @@
             this.finalizar.IdleForecolor = System.Drawing.Color.FromArgb(((int)(((byte)(49)))), ((int)(((byte)(46)))), ((int)(((byte)(51)))));
             this.finalizar.IdleLineColor = System.Drawing.Color.SpringGreen;
             this.finalizar.Location = new System.Drawing.Point(241, 239);
-            this.finalizar.Margin = new System.Windows.Forms.Padding(5, 5, 5, 5);
+            this.finalizar.Margin = new System.Windows.Forms.Padding(5);
             this.finalizar.Name = "finalizar";
             this.finalizar.Size = new System.Drawing.Size(124, 40);
             this.finalizar.TabIndex = 32;

@@ -40,3 +40,6 @@ C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\D
 C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.Register.resources
 C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.viewCarga.resources
 C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.csproj.GenerateResource.Cache
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\bin\Debug\proyectoBD.exe.config
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.exe
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.pdb
