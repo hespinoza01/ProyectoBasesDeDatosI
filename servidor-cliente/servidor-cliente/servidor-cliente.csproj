@@ -51,6 +51,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clases\Chat.cs" />
+    <Compile Include="clases\handleClient.cs" />
+    <Compile Include="clases\serverPrototype2.cs" />
+    <Compile Include="clases\serverPrototype_1.cs" />
     <Compile Include="servidor.cs">
       <SubType>Form</SubType>
     </Compile>

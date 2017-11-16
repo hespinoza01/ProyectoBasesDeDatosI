@@ -1,4 +1,5 @@
-﻿using System;
+﻿using servidor_cliente.clases;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Net.Sockets;
@@ -37,7 +38,7 @@ namespace servidor_cliente
                     mensajeCliente = mensajeCliente.Substring(0, mensajeCliente.IndexOf("$"));
                     //->Aquí va el código donde se envía el contenido del mensaje a la vista del chat en el home                    
                      
-                    Servidor.DifundirATodos(mensajeCliente, nombreUsuario, true);
+                    serverPrototype_1.DifundirATodos(mensajeCliente, nombreUsuario, true);
                 }
                 catch (Exception)
                 {

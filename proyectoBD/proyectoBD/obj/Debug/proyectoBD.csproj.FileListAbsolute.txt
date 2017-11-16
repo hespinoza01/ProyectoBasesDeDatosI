@@ -43,3 +43,14 @@ C:\Users\RicardoRené\Documents\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\D
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\bin\Debug\proyectoBD.exe.config
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.exe
 C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.pdb
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\bin\Debug\proyectoBD.exe
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\bin\Debug\proyectoBD.pdb
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.csprojResolveAssemblyReference.cache
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.Properties.Resources.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.home.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.login.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.loginDiag.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.popup.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.Register.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.viewCarga.resources
+C:\Users\Espinoza\Desktop\ProyectoBaseDeDatosI\proyectoBD\proyectoBD\obj\Debug\proyectoBD.csproj.GenerateResource.Cache
