@@ -35,15 +35,22 @@
             this.txtIP = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtPuerto = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.statusServer = new System.Windows.Forms.Label();
+            this.buttonClose = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.buttonClose)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.SpringGreen;
+            this.panel1.Controls.Add(this.buttonClose);
             this.panel1.Location = new System.Drawing.Point(-2, -1);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(343, 40);
+            this.panel1.Size = new System.Drawing.Size(343, 50);
             this.panel1.TabIndex = 0;
+            this.panel1.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseDown);
+            this.panel1.MouseMove += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseMove);
+            this.panel1.MouseUp += new System.Windows.Forms.MouseEventHandler(this.panel1_MouseUp);
             // 
             // startServer
             // 
@@ -140,11 +147,25 @@
             this.statusServer.AutoSize = true;
             this.statusServer.Font = new System.Drawing.Font("Century Gothic", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.statusServer.ForeColor = System.Drawing.Color.MediumSeaGreen;
-            this.statusServer.Location = new System.Drawing.Point(22, 63);
+            this.statusServer.Location = new System.Drawing.Point(22, 71);
             this.statusServer.Name = "statusServer";
             this.statusServer.Size = new System.Drawing.Size(96, 33);
             this.statusServer.TabIndex = 5;
             this.statusServer.Text = "label1";
+            // 
+            // buttonClose
+            // 
+            this.buttonClose.BackColor = System.Drawing.Color.SpringGreen;
+            this.buttonClose.Image = ((System.Drawing.Image)(resources.GetObject("buttonClose.Image")));
+            this.buttonClose.ImageActive = ((System.Drawing.Image)(resources.GetObject("buttonClose.ImageActive")));
+            this.buttonClose.Location = new System.Drawing.Point(292, 3);
+            this.buttonClose.Name = "buttonClose";
+            this.buttonClose.Size = new System.Drawing.Size(44, 44);
+            this.buttonClose.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.buttonClose.TabIndex = 6;
+            this.buttonClose.TabStop = false;
+            this.buttonClose.Zoom = 15;
+            this.buttonClose.Click += new System.EventHandler(this.buttonClose_Click);
             // 
             // Servidor
             // 
@@ -162,6 +183,8 @@
             this.Name = "Servidor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Servidor";
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.buttonClose)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -175,6 +198,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtIP;
         private Bunifu.Framework.UI.BunifuMaterialTextbox txtPuerto;
         private System.Windows.Forms.Label statusServer;
+        private Bunifu.Framework.UI.BunifuImageButton buttonClose;
     }
 }
 

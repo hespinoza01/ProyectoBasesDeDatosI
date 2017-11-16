@@ -6,23 +6,26 @@ using System.Net.Sockets;
 using System.Text;
 using System.Threading.Tasks;
 using servidor_cliente.clases;
+using System.Net;
 
 namespace servidor_cliente.clases
 {
     class serverPrototype2
     {
         public static Hashtable clientsList = new Hashtable();
+        public static TcpListener serverSocket;
+        public static TcpClient clientSocket;
 
-        public void startServer(string puerto)
+        public void startServer(string IP, string puerto)
         {
 
-            TcpListener serverSocket = new TcpListener(int.Parse(puerto));
-            TcpClient clientSocket = default(TcpClient);
+            serverSocket = new TcpListener(IPAddress.Parse(IP), int.Parse(puerto));
+            clientSocket = default(TcpClient);
             int counter = 0;
 
             serverSocket.Start();
 
-            Console.WriteLine("Chat Server Started ....");
+            /*Console.WriteLine("Chat Server Started ....");
             counter = 0; while ((true))
             {
                 counter += 1;
@@ -40,17 +43,19 @@ namespace servidor_cliente.clases
                 Console.WriteLine(dataFromClient + " Joined chat room ");
                 handleClient client = new handleClient();
                 client.startClient(clientSocket, dataFromClient, clientsList);
-            }
+            }*/
 
-            clientSocket.Close();
+        }
 
+
+        public void stopServer()
+        {
+            //clientSocket.Close();
             serverSocket.Stop();
 
             Console.WriteLine("exit");
-
-            Console.ReadLine();
-
         }
+
 
         public static void broadcast(string msg, string uName, bool flag)
         {

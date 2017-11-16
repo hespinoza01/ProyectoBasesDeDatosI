@@ -17,6 +17,7 @@ namespace servidor_cliente
     public partial class Servidor : Form
     {
         bool activate = false;
+        Bunifu.Framework.UI.Drag drag = new Bunifu.Framework.UI.Drag(); //  objeto para habilitar la traslacion del form
 
         public Servidor()
         {
@@ -32,7 +33,7 @@ namespace servidor_cliente
                 activate = true;
                 statusServer.Text = "Servidor Iniciado...";
                 serverPrototype2 s = new serverPrototype2();
-                s.startServer(txtPuerto.Text);
+                s.startServer(txtIP.Text, txtPuerto.Text);
             }
         }
 
@@ -41,10 +42,29 @@ namespace servidor_cliente
             if (activate){
                 activate = false;
                 statusServer.Text = "Servidor Detenido...";
+                serverPrototype2 s = new serverPrototype2();
+                s.stopServer();
             }
         }
 
+        private void buttonClose_Click(object sender, EventArgs e)
+        {
+            this.Close();
+        }
 
-        
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            drag.Grab(this);
+        }
+
+        private void panel1_MouseUp(object sender, MouseEventArgs e)
+        {
+            drag.Release();
+        }
+
+        private void panel1_MouseMove(object sender, MouseEventArgs e)
+        {
+            drag.MoveObject();
+        }
     }
 }

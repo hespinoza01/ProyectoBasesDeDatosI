@@ -118,6 +118,30 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="buttonClose.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAADtSURBVEhL7ZVBDoIwEAApauJ/uCjFhB9ISfgBlm/wBfWsV/U3njn6DhPthl3FBrFI1ZgwF7K7
+        3U7LJuD0/Acpn89yJ3cxNALWy0AEGDaT+WIquThLX2xMRSjYQl/K4wmmG2GqYakaLhkXhzwMh5ivBeqw
+        DtZDn0qxsvIaI1EXAdEosiEg2IJHK11kU0DoorFtAXETSR6d4Akx5MuyJaTnjdTJC7xBATGW7KDN4Ig3
+        2tOMOgMbwYaVV+RKHq+tiWoENANmRVQVwIYqpQ/5LgrErrXIQEC8J2ohIB5ESZIMMP+cb32FP/8/6fkx
+        jnMFYyWy0ItDKkMAAAAASUVORK5CYII=
+</value>
+  </data>
+  <data name="buttonClose.ImageActive" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAACQAAAAkCAYAAADhAJiYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAHqSURBVFhH7ZdLSkQxEEXb71B0XYIzQdCRn22I4gpEQVFxA6K4BQXRnYi/BehAvQc6EEJVXpJ+
+        QoteOKDpVL3L66SqevCvv6BZsSQOxYN4Fh9D+PteHAj2sPfHtCD2xJv4KuRV7Ip50atWxYuwHlrCk1gR
+        I2tanArrIS0ciSnRJMxcCyvxKFyKJlN9vpmUY1GlNWEl6pPiM8Vtyh3gG/GZrFmw5zZZi+GgF90+rraV
+        AE7EhNgSOVN8ti7YezZcs9gRWVHIvDrDm+EBQZvCMhXMBBFDbLoP+CZmhCuqqxUIPAgTsVJTqRnU9TYX
+        hSvagRUUIPGGiMX/rLeYgX3hit5kBcVYpjDSYgbuhCuaoxWUYr2NWKVmgNvmio5tBVl4pmrMwLtwNXaG
+        xu4rY7iygmIsMxiAWF6dSskeaiY9KyjgmWEd0joVSoKVK5C99l2F0TMT7/HqVJwrJlsYaR2MnVZg2jq8
+        c5IanxRek+XMZlsHYga2goEZqaa5YuZ8uGaxLTrFSMDJtxJAX+PHo5gTRWJ4spL0ybKoEgO5lagPaOLV
+        YhC/ElbCUbgQzb88CGQgtxK3QJ1rNhOLM5U76F1wgKvPTJe4fczANb9gqTNc7eLb1CIKGdWVkk8f4s3R
+        sYG/WeMz9nQWvX/9cg0G3zTdW9eWF1/uAAAAAElFTkSuQmCC
+</value>
+  </data>
   <data name="startServer.BackgroundImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAHgAAAAoCAYAAAA16j4lAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
