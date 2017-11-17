@@ -19,7 +19,7 @@ namespace proyectoBD
         public viewCarga(type t)
         {
             InitializeComponent();
-            
+
             color.Add(Color.FromArgb(104, 33, 122));
             color.Add(Color.FromArgb(42, 88, 173));
             color.Add(Color.FromArgb(255, 140, 0));
@@ -45,7 +45,7 @@ namespace proyectoBD
                     c = true;
 
                     datosUser du = new datosUser();
-                    du.saveBackup();
+
 
                     break;
             }
@@ -56,14 +56,14 @@ namespace proyectoBD
         int dir = 1;
         private void timer1_Tick(object sender, EventArgs e)
         {
-            if(progress.Value == 90)
+            if (progress.Value == 90)
             {
-                dir -=1;
+                dir -= 1;
                 progress.animationIterval = 4;
                 cambioColor();
-            }else if (progress.Value == 10)
+            } else if (progress.Value == 10)
             {
-                dir +=1;
+                dir += 1;
                 progress.animationIterval = 2;
                 cambioColor();
             }
@@ -96,7 +96,7 @@ namespace proyectoBD
                 bunifuColorTransition1.ProgessValue = 0;
                 progress.ProgressColor = bunifuColorTransition1.Value;
             }
-                
+
         }
 
         int i = 0;
@@ -107,7 +107,7 @@ namespace proyectoBD
             if (i < txt.Count - 1)
                 i++;
             else
-                i=0;
+                i = 0;
         }
 
         private void timer3_Tick(object sender, EventArgs e)
@@ -118,17 +118,24 @@ namespace proyectoBD
             }
             else
             {
-                home h = new home();
                 login l = new login();
+                home h = new home(l.UsernameID, l.NameUser, l.LastNameUser);
                 datosUser du = new datosUser();
                 int i = l.index;
                 l.Dispose();
-
+                Console.WriteLine(l.UsernameID);
                 h.Show();
                 this.Close();
             }
-            
+
         }
+
+        public string id;
+        public string name;
+        public string last;
+        private void ActualUser(l.UsernameID, l.NameUser, l.LastNameUser)
+        { }
+
 
         public enum type
         {

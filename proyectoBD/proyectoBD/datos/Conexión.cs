@@ -8,6 +8,6 @@ namespace proyectoBD.datos
 {
     class Conexión
     {
-        public static string Cn;
+        public static string Cn = "Data Source=RICARDOCHÁVEZJR\\RCHAVEZ; Initial Catalog=ProyectoBDI; Integrated Security=true";
     }
 }

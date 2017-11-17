@@ -12,10 +12,14 @@ namespace proyectoBD
 {
     public partial class home : Form
     {
-        public home()
+
+        public home(string id,string name,string last)
         {
             InitializeComponent();
             toolTip1.SetToolTip(cerrarSesion, "Cerrar Sesion");
+            labelNombre.Text = name;
+            labelApellido.Text = last;
+            labelId.Text = id;
         }
 
         private void home_Load(object sender, EventArgs e)
@@ -28,5 +32,6 @@ namespace proyectoBD
             login l = new login();
             l.Show();
         }
+
     }
 }

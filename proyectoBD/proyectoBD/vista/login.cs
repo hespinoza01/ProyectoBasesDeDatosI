@@ -20,6 +20,9 @@ namespace proyectoBD
 
         bool f = true;
         public int index;
+        public string UsernameID;
+        public string NameUser;
+        public string LastNameUser;
 
         private void login_Load(object sender, EventArgs e)
         {
@@ -89,28 +92,31 @@ namespace proyectoBD
 
         private void addUser_Click(object sender, EventArgs e)
         {
-            Register r = new Register(false, 0);
+            Register r = new Register(false,"");
             r.Show();
         }
 
         private bool verifica()
         {
-            datosUser du = new datosUser();
-            bool us = false;
-
-            for (int i = 0; i < du.getUsers().Count; i++) {
-                Console.WriteLine("nom =" + du.getUsers()[i].UserName + ",pass=" + du.getUsers()[i].Password);
-                if (du.getUsers()[i].UserName.Equals(username.Text.TrimEnd()) && du.getUsers()[i].Password.Equals(password.Text.TrimEnd()) ){
-                    
-                    us = true;
-                    index = i;
-                    break;
-                }
-                    
+            user v = new user();
+            bool ver = false;
+            try
+            {   
+                DataTable Datos = v.Verifica(this.username.Text,this.password.Text);
+                if (Datos.Rows.Count != 0)
+                {ver= true;}
+                else {ver= false;}
+                DataRow row = Datos.Rows[0];
+                UsernameID = row["id"].ToString();
+                NameUser = row["nombre"].ToString();
+                LastNameUser = row["apellido"].ToString();
+                return ver;
             }
-
-            Console.WriteLine("verifica " + us);
-            return us;
+            catch (Exception ex)
+            {
+                new popup(ex.Message, popup.AlertType.error);
+                return ver;
+            }
         }
 
         private void password_OnValueChanged(object sender, EventArgs e)

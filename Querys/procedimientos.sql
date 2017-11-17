@@ -38,21 +38,23 @@ as
 
 
 execute insertUser 'harold97', 'Harold', 'Espinoza', 'simple correo', null
-select * from Users
+Select * from Users
+select decryptbypassphrase('Amandagoretti29',Users.contraseña) from Users
+
 
 
 
 /*************** Validar usuario ***************/
-create procedure validaUser
+alter procedure validaUser
 	@user varchar(35),
 	@password varchar(40)
 as
-	select id
+	select id,nombre,apellido
 	from Users
 	where 
 		(id=@user or correo=@user) and convert(varchar(40), Decryptbypassphrase(@password,contraseña)) = @password
 
-execute validaUser 'simple correo', 'harold97'
+execute validaUser '@RicChá001', 'Amandagoretti29'
 
 
 
@@ -86,3 +88,5 @@ as
 			correo = @correo,
 			perfilPic = @perfilPic
 		where id = @id
+
+		Select * from Users

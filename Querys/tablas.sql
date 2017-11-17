@@ -18,3 +18,12 @@ create table Users(
 	perfilPic image
 )
 
+create table Contacts
+(
+	IdUser varchar(10) primary key,
+	IdContact varchar (10)
+)
+
+--Referencias--
+Alter Table Contacts
+add foreign key (IdUser) references Users(id)

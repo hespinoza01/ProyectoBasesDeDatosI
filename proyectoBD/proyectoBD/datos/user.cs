@@ -14,8 +14,8 @@ namespace proyectoBD
     {
         public string nombre, apellido, username, password, email;
         public Image pPic;
-        
-        public user(){ }
+
+        public user() { }
 
         public user(string nombre, string apellido, string password, string email, Image picture, Accion type)
         {
@@ -42,7 +42,8 @@ namespace proyectoBD
         }
 
 
-        public enum Accion{
+        public enum Accion
+        {
             insertar, editar, borrar
         }
 
@@ -88,8 +89,6 @@ namespace proyectoBD
         public void Insertar()
         {
             SqlConnection SqlCon = new SqlConnection();
-
-
             try
             {
                 //Código
@@ -107,28 +106,28 @@ namespace proyectoBD
                 ParContraseña.ParameterName = "@contraseña";
                 ParContraseña.SqlDbType = SqlDbType.NVarChar;
                 ParContraseña.Size = 40;
-                ParContraseña.Value = this.Password;
+                ParContraseña.Value = Password;
                 SqlCmd.Parameters.Add(ParContraseña);
 
                 SqlParameter ParNombre = new SqlParameter();
                 ParNombre.ParameterName = "@nombre";
                 ParNombre.SqlDbType = SqlDbType.NVarChar;
                 ParNombre.Size = 25;
-                ParNombre.Value = this.Nombre;
+                ParNombre.Value = Nombre;
                 SqlCmd.Parameters.Add(ParNombre);
 
                 SqlParameter ParApellido = new SqlParameter();
                 ParApellido.ParameterName = "@apellido";
                 ParApellido.SqlDbType = SqlDbType.NVarChar;
                 ParApellido.Size = 25;
-                ParApellido.Value = this.Nombre;
+                ParApellido.Value = Apellido;
                 SqlCmd.Parameters.Add(ParApellido);
 
                 SqlParameter ParCorreo = new SqlParameter();
                 ParCorreo.ParameterName = "@correo";
                 ParCorreo.SqlDbType = SqlDbType.VarChar;
                 ParCorreo.Size = 35;
-                ParCorreo.Value = this.Email;
+                ParCorreo.Value = Email;
                 SqlCmd.Parameters.Add(ParCorreo);
 
                 SqlParameter ParPerfilPicture = new SqlParameter();
@@ -139,19 +138,20 @@ namespace proyectoBD
                 ParPerfilPicture.Value = ms.GetBuffer();
                 SqlCmd.Parameters.Add(ParPerfilPicture);
 
-
+                SqlCmd.ExecuteNonQuery();
 
                 //Ejecutamos nuestro comando
 
-                if (SqlCmd.ExecuteNonQuery() == 1)
-                    new popup("Usuario creado correctamente", popup.AlertType.check);
-                else
-                    new popup("Usuario no creado", popup.AlertType.error); ;
+                //if (SqlCmd.ExecuteNonQuery() == 1)
+                //    new popup("Usuario creado correctamente", popup.AlertType.check);
+                //else
+                //    new popup("Usuario no creado", popup.AlertType.error); ;
 
             }
             catch (Exception ex)
             {
                 new popup(ex.Message, popup.AlertType.error);
+                Console.WriteLine(ex.Message);
             }
             finally
             {
@@ -289,4 +289,58 @@ namespace proyectoBD
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+
+        public DataTable Verifica(string User, string Pass)
+        {
+            DataTable dt = new DataTable("Acceso");
+            SqlConnection SqlCon = new SqlConnection();
+
+
+            try
+            {
+                //Código
+                SqlCon.ConnectionString = Conexión.Cn;
+                SqlCon.Open();
+                //Establecer el Comando
+                SqlCommand SqlCmd = new SqlCommand();
+                SqlCmd.Connection = SqlCon;
+                SqlCmd.CommandText = "validaUser";
+                SqlCmd.CommandType = CommandType.StoredProcedure;
+
+                // Parámetros del Procedimiento Almacenado
+
+                SqlParameter ParID = new SqlParameter();
+                ParID.ParameterName = "@user";
+                ParID.SqlDbType = SqlDbType.VarChar;
+                ParID.Size = 35;
+                ParID.Value = User;
+                SqlCmd.Parameters.Add(ParID);
+
+                SqlParameter ParContraseña = new SqlParameter();
+                ParContraseña.ParameterName = "@password";
+                ParContraseña.SqlDbType = SqlDbType.VarChar;
+                ParContraseña.Size = 40;
+                ParContraseña.Value = Pass;
+                SqlCmd.Parameters.Add(ParContraseña);
+                //Asignar valor retornado del procedimiento almacenado en un datatable
+                SqlDataAdapter SqlDat = new SqlDataAdapter(SqlCmd);
+                SqlDat.Fill(dt);
+                //Ejecutamos nuestro comando
+                if (SqlCmd.ExecuteNonQuery() == 1)
+                    new popup("Cuenta eliminada correctamente", popup.AlertType.check);
+                else
+                    new popup("Cuenta no eliminada", popup.AlertType.error); ;
+            }
+            catch (Exception ex)
+            {
+                new popup(ex.Message, popup.AlertType.error);
+                dt = null;
+            }
+            finally
+            {
+                if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
+            }
+            return dt;
+        }
+    }
 }

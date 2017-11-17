@@ -15,7 +15,9 @@ namespace proyectoBD
         bool edt = false;
         string n, a, nu, p, index;
         Image pic;
-        
+        private bool v1;
+        private int v2;
+
         public Register(bool e, string index)
         {
             InitializeComponent();
@@ -25,6 +27,12 @@ namespace proyectoBD
             confirPass.isPassword = true;
             edt = e;
             this.index = index;
+        }
+
+        public Register(bool v1, int v2)
+        {
+            this.v1 = v1;
+            this.v2 = v2;
         }
 
 
