@@ -14,8 +14,8 @@ namespace proyectoBD
     {
         public string nombre, apellido, username, password, email;
         public Image pPic;
-        
-        public user(){ }
+
+        public user() { }
 
         public user(string nombre, string apellido, string password, string email, Image picture, Accion type)
         {
@@ -42,7 +42,8 @@ namespace proyectoBD
         }
 
 
-        public enum Accion{
+        public enum Accion
+        {
             insertar, editar, borrar
         }
 
@@ -289,4 +290,5 @@ namespace proyectoBD
                 if (SqlCon.State == ConnectionState.Open) SqlCon.Close();
             }
         }
+    }
 }

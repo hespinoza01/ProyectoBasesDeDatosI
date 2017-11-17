@@ -89,7 +89,7 @@ namespace proyectoBD
 
         private void addUser_Click(object sender, EventArgs e)
         {
-            Register r = new Register(false, 0);
+            Register r = new Register(false, "");
             r.Show();
         }
 

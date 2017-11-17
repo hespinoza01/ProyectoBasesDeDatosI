@@ -28,5 +28,6 @@ namespace proyectoBD
             login l = new login();
             l.Show();
         }
+
     }
 }
