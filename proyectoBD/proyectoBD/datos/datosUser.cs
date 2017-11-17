@@ -4,19 +4,17 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.IO;
-
-
+using System.Windows.Forms;
 
 
 namespace proyectoBD
 {
+    [Serializable]
     public class datosUser
     {
         public static List<person> contacs = new List<person>();
         public static List<user> users = new List<user>();
 
-        public List<person> backup1 = new List<person>();
-        public List<user> backup2 = new List<user>();
 
         public datosUser(){
             
@@ -54,16 +52,5 @@ namespace proyectoBD
             users.RemoveAt(i);
         }
 
-        public void saveBackup()
-        {
-            backup1 = contacs;
-            backup2 = users;
-        }
-
-        public void loadBackup()
-        {
-            contacs = backup1;
-            users = backup2;
-        }
     }
 }

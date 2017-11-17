@@ -50,6 +50,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="datos\Conexión.cs" />
     <Compile Include="datos\datosUser.cs" />
     <Compile Include="datos\person.cs" />
     <Compile Include="datos\user.cs" />

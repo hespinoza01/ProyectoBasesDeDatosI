@@ -77,13 +77,13 @@ namespace proyectoBD
                 new viewCarga(viewCarga.type.inicio);
 
                 this.Hide();
-                popup p = new popup("Bienvenido...", popup.AlertType.check);
+                new popup("Bienvenido...", popup.AlertType.check);
             }
             else
             {
                 //loginDiag d = new loginDiag("Error, usuario o contraseña incorrectos", false, true, false);
                 //d.Show();
-                popup p = new popup("Usuario o contraseña incorrectos", popup.AlertType.error);
+                new popup("Usuario o contraseña incorrectos", popup.AlertType.error);
             }
         }
 

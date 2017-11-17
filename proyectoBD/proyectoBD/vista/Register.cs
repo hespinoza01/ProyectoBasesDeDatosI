@@ -13,11 +13,10 @@ namespace proyectoBD
     public partial class Register : Form
     {
         bool edt = false;
-        string n, a, nu, p;
+        string n, a, nu, p, index;
         Image pic;
-        int index;
         
-        public Register(bool e, int index)
+        public Register(bool e, string index)
         {
             InitializeComponent();
             lateral.Visible = false;
@@ -28,9 +27,25 @@ namespace proyectoBD
             this.index = index;
         }
 
+
+        /***************************/
+        /* * * * * EVENTOS * * * * */
+        /***************************/
+
+        private void Register_Load(object sender, EventArgs e)
+        {
+            Console.WriteLine(edt);
+            if (edt)
+            {
+                Edit();
+            }
+        }
+
+
         private void edit_Click(object sender, EventArgs e)
         {
-            if(open.ShowDialog() == DialogResult.OK){
+            if (open.ShowDialog() == DialogResult.OK)
+            {
                 Bitmap imagen = new Bitmap(open.FileName);
                 perfil.Image = imagen;
             }
@@ -43,41 +58,25 @@ namespace proyectoBD
 
         private void registrar_Click(object sender, EventArgs e)
         {
-            if (CVacios()){
-                popup p = new popup("Campos vacios...", popup.AlertType.error);
+            if (CVacios())
+                new popup("Campos vacios...", popup.AlertType.error);
+            else
+            {
+                if (pass.Text.Equals(confirPass.Text))
+                {
 
-            }else{
-                if (pass.Text.Equals(confirPass.Text)){
-
-                    if (edt==true)
-                    {
+                    if (edt == true)
                         editInfo();
-                    }
                     else
-                    {
                         saveNew();
-                    }
-                    
+
+
                     this.Close();
-
-                }else{
-                    popup p = new popup("Contraseñas no coinciden...", popup.AlertType.error);
                 }
+                else
+                    new popup("Contraseñas no coinciden...", popup.AlertType.error);
             }
-            
-        }
 
-        private bool CVacios()
-        {
-            bool vacio = false;
-
-            if (nomUser.Text.Equals("")) { vacio = true; }    
-
-            if (pass.Text.Equals("")) { vacio = true; }  
-
-            if (confirPass.Text.Equals("")) { vacio = true; }
-            Console.Write(vacio);
-            return vacio;
         }
 
         private void next_Click(object sender, EventArgs e)
@@ -89,18 +88,8 @@ namespace proyectoBD
             }
             else
             {
-                popup p = new popup("Rellenar todos los campos", popup.AlertType.error);
+                new popup("Rellenar todos los campos", popup.AlertType.warning);
             }
-        }
-
-        public bool val()
-        {
-            bool val = true;
-
-            if (nombreTxt.Text.Equals("")) { val = false; }
-            if(apellidoTxt.Text.Equals("")) { val = false; }
-
-            return val;
         }
 
         private void nomUser_KeyPress(object sender, KeyPressEventArgs e)
@@ -141,29 +130,48 @@ namespace proyectoBD
             bac.Visible = false;
         }
 
-        void saveNew()
+
+        /***************************/
+        /* * * * * MÉTODOS * * * * */
+        /***************************/
+
+        private bool CVacios()
         {
-            user u = new user();
-            datosUser du = new datosUser();
+            bool vacio = false;
 
-            u.Nombre = nombreTxt.Text;
-            u.Apellido = apellidoTxt.Text;
-            u.UserName = nomUser.Text;
-            u.Password = pass.Text;
-            u.PPic = perfil.Image;
+            if (nomUser.Text.Equals("")) { vacio = true; }
 
-            du.addUser(u);
-            Console.WriteLine(du.getUsers()[0].UserName + "  " + du.getUsers()[0].Password);
-            new popup("Usuario creado correctamente", popup.AlertType.check);
+            if (pass.Text.Equals("")) { vacio = true; }
+
+            if (confirPass.Text.Equals("")) { vacio = true; }
+            Console.Write(vacio);
+            return vacio;
         }
 
-        private void Register_Load(object sender, EventArgs e)
+        public bool val()
         {
-            Console.WriteLine(edt);
-            if (edt)
-            {
-                Edit();
-            }
+            bool val = true;
+
+            if (nombreTxt.Text.Equals("")) { val = false; }
+            if(apellidoTxt.Text.Equals("")) { val = false; }
+
+            return val;
+        }
+
+
+        //crear nuevo usuario
+        void saveNew()
+        {
+
+            new user(
+                nombreTxt.Text,
+                apellidoTxt.Text,
+                pass.Text,
+                nomUser.Text,
+                perfil.Image,
+                user.Accion.insertar
+            );
+
         }
 
         public void Edit()
@@ -187,18 +195,14 @@ namespace proyectoBD
 
         public void editInfo()
         {
-            user tem = new user();
-            datosUser du = new datosUser();
-            home h = new home();
-
-            tem.Nombre = nombreTxt.Text;
-            tem.Apellido = apellidoTxt.Text;
-            tem.UserName = nomUser.Text;
-            tem.Password = pass.Text;
-            tem.PPic = perfil.Image;
-
-            du.getUsers()[index] = tem;
-            new popup("Cambios guardados correctamente", popup.AlertType.check);
+            new user(
+                nombreTxt.Text,
+                apellidoTxt.Text,
+                pass.Text,
+                nomUser.Text,
+                perfil.Image,
+                user.Accion.editar
+            );
            
         }
         

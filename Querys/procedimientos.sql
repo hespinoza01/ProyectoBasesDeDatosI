@@ -66,3 +66,23 @@ as
 	where id=@id and convert(varchar(40), Decryptbypassphrase(@password,contraseña)) = @password
 
 execute borrarUser '@HarEsp001', 'harold97'
+
+
+
+/*************** Editar usuario ***************/
+create procedure editarUsuario
+	@id varchar(10),
+	@contraseña nvarchar(40),
+	@nombre nvarchar(25),
+	@apellido nvarchar(25),
+	@correo varchar(35),
+	@perfilPic image
+as
+	update Users
+		set 
+			contraseña = @contraseña,
+			nombre = @nombre,
+			apellido = @apellido,
+			correo = @correo,
+			perfilPic = @perfilPic
+		where id = @id
