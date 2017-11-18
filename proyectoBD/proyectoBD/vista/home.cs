@@ -13,13 +13,13 @@ namespace proyectoBD
     public partial class home : Form
     {
 
-        public home(string id,string name,string last)
+        public home()
         {
             InitializeComponent();
             toolTip1.SetToolTip(cerrarSesion, "Cerrar Sesion");
-            labelNombre.Text = name;
-            labelApellido.Text = last;
-            labelId.Text = id;
+            //labelNombre.Text = name;
+            //labelApellido.Text = last;
+            //labelId.Text = id;
         }
 
         private void home_Load(object sender, EventArgs e)

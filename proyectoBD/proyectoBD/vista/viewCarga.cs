@@ -119,7 +119,7 @@ namespace proyectoBD
             else
             {
                 login l = new login();
-                home h = new home(l.UsernameID, l.NameUser, l.LastNameUser);
+                home h = new home();
                 datosUser du = new datosUser();
                 int i = l.index;
                 l.Dispose();
@@ -133,8 +133,8 @@ namespace proyectoBD
         public string id;
         public string name;
         public string last;
-        private void ActualUser(l.UsernameID, l.NameUser, l.LastNameUser)
-        { }
+        //private void ActualUser(l.UsernameID, l.NameUser, l.LastNameUser)
+        //{ }
 
 
         public enum type
